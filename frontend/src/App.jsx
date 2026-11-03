@@ -1,9 +1,13 @@
-
-import './App.css'
+import './App.css';
+import AccessibilityMenu from './components/AccessibilityMenu.tsx';
+import Navbar from './components/Navbar.tsx';
 
 function App() {
   return (
-    <h2>Hi!</h2>
+    <main className="bg-page h-screen ">
+      <Navbar />
+      <AccessibilityMenu />
+    </main>
   )
 }
 
