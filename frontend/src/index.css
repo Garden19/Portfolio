@@ -1,1 +1,151 @@
 @import "tailwindcss";
+
+/* This is used for extra colors */
+@theme {
+  --color-dust-grey: #DAD6D6;
+  --color-teal: #92BFB1;
+  --color-honey: #F4AC45;
+  --color-coffee: #694A38;
+  --color-rose: #A61C3C;
+}
+
+/* Maps the colors classes to variables for colors that can change */
+@theme inline {
+  --font-heading: var(--app-heading-font);
+  --font-subheading: var(--app-subheading-font);
+  --font-body: var(--app-font);
+  --color-page: var(--app-page);
+  --color-surface: var(--app-surface);
+  --color-heading-1: var(--app-heading-1);
+  --color-heading-2: var(--app-heading-2);
+  --color-heading-3: var(--app-heading-3);
+  --color-on-primary: var(--app-on-primary);
+  --color-secondary: var(--app-secondary);
+  --color-on-secondary: var(--app-on-secondary);
+  --color-accent: var(--app-accent);
+  --color-on-accent: var(--app-on-accent);
+  --color-border: var(--app-border);
+  --color-border-subtle: var(--app-border-subtle);
+  --color-focus: var(--app-focus);
+  --color-error: var(--app-error);
+  --color-on-error: var(--app-on-error);
+  --color-disabled: var(--app-disabled);
+  --color-disabled-text: var(--app-disabled-text);
+  --color-body: var(--app-body);
+  --color-primary: var(--app-primary);
+}
+
+/* This is the default theme */
+:root {
+  --app-heading-font: "General Sans", Arial, sans-serif;
+  --app-subheading-font: "General Sans", Arial, sans-serif;
+  --app-font: "Sentient", Georgia, serif;
+  --app-page: #FAF8F5;
+  --app-surface: #FFFFFF;
+  --app-body: #241F1D;
+  --app-primary: #694A38;
+  --app-on-primary: #FFFFFF;
+  --app-focus: #0758B8;
+  --app-heading-1: #694A38;
+  --app-heading-2: #A61C3C;
+  --app-heading-3: #694A38;
+  --app-secondary: #92BFB1;
+  --app-on-secondary: #241F1D;
+  --app-accent: #F4AC45;
+  --app-on-accent: #241F1D;
+  --app-border: #805B47;
+  --app-border-subtle: #C7BFC0;
+  --app-error: #A61C3C;
+  --app-on-error: #FFFFFF;
+  --app-disabled: #E7E3E3;
+  --app-disabled-text: #655E5C;
+}
+
+/* This overwrites the colours when the data-theme is set to contrast */
+:root[data-theme="contrast"] {
+  --app-page: #000000;
+  --app-body: #FFFFFF;
+  --app-primary: #FFFF00;
+  --app-on-primary: #000000;
+  --app-focus: #FFFF00;
+  --app-surface: #000000;
+  --app-heading-1: #FFFF00;
+  --app-heading-2: #FFFF00;
+  --app-heading-3: #FFFF00;
+  --app-secondary: #FFFFFF;
+  --app-on-secondary: #000000;
+  --app-accent: #00FFFF;
+  --app-on-accent: #000000;
+  --app-border: #FFFFFF;
+  --app-border-subtle: #CCCCCC;
+  --app-error: #FF6680;
+  --app-on-error: #000000;
+  --app-disabled: #3D3D3D;
+  --app-disabled-text: #E0E0E0;
+}
+
+/* This is a work in progress, as content is added, I then want to add alignment changes */
+:root[data-font="dyslexic"] {
+  --app-heading-font: Verdana, Tahoma, sans-serif;
+  --app-subheading-font: Verdana, Tahoma, sans-serif;
+  --app-font: Verdana, Tahoma, sans-serif;
+  --app-letter-spacing: 0.02em;
+  --app-word-spacing: 0.08em;
+  --app-line-height: 1.7;
+}
+
+/* This makes the keyboard focus follow themes */
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--app-focus);
+    outline-offset: 3px;
+  }
+
+  body {
+    @apply bg-page text-body font-body;
+  }
+
+  h1 {
+    @apply font-heading text-heading-1 text-4xl font-bold;
+  }
+
+  h2 {
+    @apply font-subheading text-heading-2 text-3xl font-bold;
+  }
+
+  h3 {
+    @apply font-subheading text-heading-3 text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply font-subheading text-heading-3 text-xl font-semibold;
+  }
+
+  h5 {
+    @apply font-subheading text-heading-3 text-lg font-semibold;
+  }
+
+  h6 {
+    @apply font-subheading text-heading-3 text-base font-semibold;
+  }
+
+  p, li, label, button, input, textarea, select {
+    @apply font-body;
+  }
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sentient";
+  src: url("/fonts/Sentient-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
