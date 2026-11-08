@@ -1,22 +1,43 @@
-import "./App.css";
-import AccessibilityMenu from "./components/AccessibilityMenu.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Intro from "./components/section-components/Intro.tsx";
-import Timeline from "./components/section-components/timeline.tsx";
 
-function App() {
+import { Routes, Route } from "react-router";
+
+import AccessibilityMenu from "./components/AccessibilityMenu";
+import Navbar from "./components/Navbar";
+import Intro from "./components/section-components/Intro";
+import Timeline from "./components/section-components/timeline";
+import ExperienceDetails from "./components/ExperienceDetails";
+import ScrollToTop from "./components/ScrollToTop";
+
+export default function App() {
     return (
         <main className="w-full min-h-dvh flex flex-col">
+            <ScrollToTop />
             <Navbar />
-            <div className="min-h-dvh flex flex-col bg-page-primary">
-                <Intro />
-            </div>
-            <div className="min-h-dvh flex flex-col bg-page-secondary">
-                <Timeline />
-            </div>
+            
+            <Routes>
+
+                <Route path="/" element={
+                        <>
+                            <div className="min-h-dvh flex flex-col bg-page-primary">
+                                <Intro />
+                            </div>
+
+                            <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                <Timeline />
+                            </div>
+                        </>
+                    }
+                />
+
+                <Route path="/experience/:id" element={
+                        <div className="min-h-dvh flex flex-col bg-page-secondary">
+                            <ExperienceDetails />
+                        </div>
+                    }
+                />
+
+            </Routes>
             <AccessibilityMenu />
         </main>
     );
 }
-
-export default App;
