@@ -14,7 +14,8 @@
   --font-heading: var(--app-heading-font);
   --font-subheading: var(--app-subheading-font);
   --font-body: var(--app-font);
-  --color-page: var(--app-page);
+  --color-page-primary: var(--app-page-primary);
+  --color-page-secondary: var(--app-page-secondary);
   --color-surface: var(--app-surface);
   --color-heading-1: var(--app-heading-1);
   --color-heading-2: var(--app-heading-2);
@@ -40,6 +41,8 @@
   --app-heading-font: "General Sans", Arial, sans-serif;
   --app-subheading-font: "General Sans", Arial, sans-serif;
   --app-font: "Sentient", Georgia, serif;
+  --app-page-primary: #FAF8F5;
+  --app-page-secondary: #F0EBE5;
   --app-page: #FAF8F5;
   --app-surface: #FFFFFF;
   --app-body: #241F1D;
@@ -63,25 +66,26 @@
 
 /* This overwrites the colours when the data-theme is set to contrast */
 :root[data-theme="contrast"] {
-  --app-page: #000000;
+  --app-page-primary: #000000;
+  --app-page-secondary: #333333;
   --app-body: #FFFFFF;
-  --app-primary: #FFFF00;
+  --app-primary: #F0E68C;
   --app-on-primary: #000000;
-  --app-focus: #FFFF00;
-  --app-surface: #000000;
-  --app-heading-1: #FFFF00;
-  --app-heading-2: #FFFF00;
-  --app-heading-3: #FFFF00;
-  --app-secondary: #FFFFFF;
+  --app-focus: #F0E68C;
+  --app-surface: #333333;
+  --app-heading-1: #F0E68C;
+  --app-heading-2: #FF5733;
+  --app-heading-3: #FFFFFF;
+  --app-secondary: #BFBFBF;
   --app-on-secondary: #000000;
-  --app-accent: #00FFFF;
+  --app-accent: #FF5733;
   --app-on-accent: #000000;
-  --app-border: #FFFFFF;
-  --app-border-subtle: #CCCCCC;
-  --app-error: #FF6680;
+  --app-border: #808080;
+  --app-border-subtle: #5C5C5C;
+  --app-error: #FF5733;
   --app-on-error: #000000;
-  --app-disabled: #3D3D3D;
-  --app-disabled-text: #E0E0E0;
+  --app-disabled: #4D4D4D;
+  --app-disabled-text: #C0C0C0;
 }
 
 /* This is a work in progress, as content is added, I then want to add alignment changes */
@@ -102,7 +106,7 @@
   }
 
   body {
-    @apply bg-page text-body font-body;
+    @apply bg-page-primary text-body font-body;
   }
 
   h1 {
