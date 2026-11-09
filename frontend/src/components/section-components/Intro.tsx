@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
+import mascotBody from "../../assets/images/mascotBody.png";
+import mascotEye from "../../assets/images/mascotEye.png";
+
 export default function Intro() {
     const [eyePosition, setEyePosition] = useState({
         x: 0,
@@ -85,7 +88,7 @@ export default function Intro() {
                     lg:w-[90%] lg:-bottom-2.5
                 ">
                     <img
-                        src="/src/assets/images/mascotBody.png"
+                        src={mascotBody}
                         alt="Edan Read mascot"
                         className="
                             block
@@ -94,7 +97,7 @@ export default function Intro() {
                         "
                     />
                     <img
-                        src="/src/assets/images/mascotEye.png"
+                        src={mascotEye}
                         alt=""
                         style={{ marginLeft: `${eyePosition.x}px`, marginTop: `${eyePosition.y}px` }}
                         aria-hidden="true"
@@ -109,7 +112,7 @@ export default function Intro() {
                         "
                     />
                     <img
-                        src="/src/assets/images/mascotEye.png"
+                        src={mascotEye}
                         alt=""
                         style={{ marginLeft: `${eyePosition.x}px`, marginTop: `${eyePosition.y}px` }}
                         aria-hidden="true"
