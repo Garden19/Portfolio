@@ -9,6 +9,9 @@ export default function Navbar() {
     const isExperienceDetailsPage =
         location.pathname.startsWith("/experience/");
 
+    const isProjectDetailsPage =
+        location.pathname.startsWith("/project/");
+
     function autoScroll(id: string) {
         const section = document.getElementById(id);
 
@@ -38,6 +41,23 @@ export default function Navbar() {
         }
     }
 
+    function handleProjectsClick() {
+        if (isProjectDetailsPage) {
+            navigate("/#projects-list");
+        } else {
+            autoScroll("projects-list");
+        }
+    }
+
+    const buttonClass = `
+        text-primary font-medium
+        px-4 py-2 rounded-md
+        hover:bg-secondary
+        hover:text-on-secondary
+        transition-colors
+        cursor-pointer
+    `;
+
     return (
         <nav
             className="
@@ -53,34 +73,37 @@ export default function Navbar() {
                 Edan Read
             </h1>
 
-                <div className="flex flex-wrap justify-center gap-2 [&_button]:cursor-pointer">                {isExperienceDetailsPage ? (
+            <div className="flex flex-wrap justify-center gap-2">
+                {isExperienceDetailsPage ? (
                     <button
                         type="button"
                         onClick={handleExperienceClick}
-                        className="
-                            text-primary font-medium
-                            px-4 py-2 rounded-md
-                            hover:bg-secondary
-                            hover:text-on-secondary
-                            transition-colors
-                        "
+                        className={buttonClass}
                     >
                         Back to Experience
+                    </button>
+                ) : isProjectDetailsPage ? (
+                    <button
+                        type="button"
+                        onClick={handleProjectsClick}
+                        className={buttonClass}
+                    >
+                        Back to Projects
                     </button>
                 ) : (
                     <>
                         <button
                             type="button"
                             onClick={handleExperienceClick}
-                            className="text-primary font-medium px-4 py-2 rounded-md hover:bg-secondary hover:text-on-secondary transition-colors"
+                            className={buttonClass}
                         >
                             Experience
                         </button>
 
                         <button
                             type="button"
-                            onClick={() => autoScroll("projects")}
-                            className="text-primary font-medium px-4 py-2 rounded-md hover:bg-secondary hover:text-on-secondary transition-colors"
+                            onClick={handleProjectsClick}
+                            className={buttonClass}
                         >
                             Projects
                         </button>
@@ -88,7 +111,7 @@ export default function Navbar() {
                         <button
                             type="button"
                             onClick={() => autoScroll("skills")}
-                            className="text-primary font-medium px-4 py-2 rounded-md hover:bg-secondary hover:text-on-secondary transition-colors"
+                            className={buttonClass}
                         >
                             Skills
                         </button>
@@ -96,7 +119,7 @@ export default function Navbar() {
                         <button
                             type="button"
                             onClick={() => autoScroll("contact")}
-                            className="text-primary font-medium px-4 py-2 rounded-md hover:bg-secondary hover:text-on-secondary transition-colors"
+                            className={buttonClass}
                         >
                             Contact
                         </button>
