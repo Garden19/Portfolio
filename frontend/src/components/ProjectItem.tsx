@@ -24,7 +24,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                 <div className="flex flex-wrap items-start justify-between gap-3">
                     <h3
                         className="
-                            text-heading-1
+                            text-heading-2
                             font-heading
                             text-2xl font-bold
                             min-w-0

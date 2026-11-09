@@ -15,10 +15,8 @@ export default function Timeline() {
         >
             <div
                 className="
-                    sticky
                     top-0
                     z-30
-                    bg-page-secondary
                     py-4
                     mb-10
                 "
