@@ -202,7 +202,7 @@ export default function Projects() {
                             <option value="web-development">
                                 Web Development
                             </option>
-                            <option value="automations">
+                            <option value="automation">
                                 Automations
                             </option>
                         </select>
