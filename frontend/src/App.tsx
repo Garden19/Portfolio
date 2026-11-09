@@ -9,6 +9,7 @@ import ExperienceDetails from "./components/ExperienceDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import Projects from "./components/section-components/projects";
 import ProjectDetails from "./components/ProjectDetails";
+import Skills from "../src/components/section-components/Skills"
 
 export default function App() {
     return (
@@ -30,6 +31,10 @@ export default function App() {
 
                             <div className="min-h-dvh flex flex-col bg-page-primary">
                                 <Projects />
+                            </div>
+
+                            <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                <Skills />
                             </div>
                         </>
                     }
