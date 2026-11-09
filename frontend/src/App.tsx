@@ -10,6 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Projects from "./components/section-components/projects";
 import ProjectDetails from "./components/ProjectDetails";
 import Skills from "../src/components/section-components/Skills"
+import Contact from "./components/section-components/Contact";
+import ThankYou from "./components/ThankYou";
 
 export default function App() {
     return (
@@ -36,6 +38,10 @@ export default function App() {
                             <div className="min-h-dvh flex flex-col bg-page-secondary">
                                 <Skills />
                             </div>
+
+                            <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                <Contact />
+                            </div>
                         </>
                     }
                 />
@@ -50,6 +56,7 @@ export default function App() {
                     path="/project/:id"
                     element={<ProjectDetails />}
                 />
+                <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
             <AccessibilityMenu />
         </main>
