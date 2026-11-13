@@ -58,6 +58,8 @@ export default function ProjectDetails() {
 
     return (
         <>
+            <title>{`${selectedProject.name} | Edan Read`}</title>
+
             <main
                 className="
                     min-h-dvh w-full

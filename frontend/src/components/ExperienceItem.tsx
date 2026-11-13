@@ -75,10 +75,10 @@ export default function ExperienceItem({ experience }: ExperienceItemProps) {
                         focus-visible:outline-offset-2
                         focus-visible:outline-focus
                         transition-all duration-300
-                        cursor-pointer
+                        cursor-pointer not-lg:w-full
                     "
                 >
-                    See more
+                    See more about my {experience.title} experience
                 </Link>
             </article>
         </>

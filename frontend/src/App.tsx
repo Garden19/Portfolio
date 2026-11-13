@@ -15,50 +15,57 @@ import ThankYou from "./components/ThankYou";
 
 export default function App() {
     return (
-        <main className="w-full min-h-dvh flex flex-col">
-            <ScrollToTop />
-            <Navbar />
-            
-            <Routes>
+            <main className="w-full min-h-dvh flex flex-col">
+                <ScrollToTop />
+                <Navbar />
+                
+                <Routes>
 
-                <Route path="/" element={
+                    <Route path="/" element={
+                            <>
+                                <title>Home | Edan Read</title>
+                                
+                                <div className="min-h-dvh flex flex-col bg-page-primary">
+                                    <Intro />
+                                </div>
+
+                                <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                    <Timeline />
+                                </div>
+
+                                <div className="min-h-dvh flex flex-col bg-page-primary">
+                                    <Projects />
+                                </div>
+
+                                <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                    <Skills />
+                                </div>
+
+                                <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                    <Contact />
+                                </div>
+                            </>
+                        }
+                    />
+
+                    <Route path="/experience/:id" element={
+                            <div className="min-h-dvh flex flex-col bg-page-secondary">
+                                <ExperienceDetails />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/project/:id"
+                        element={<ProjectDetails />}
+                    />
+                    <Route path="/thank-you" element={
                         <>
-                            <div className="min-h-dvh flex flex-col bg-page-primary">
-                                <Intro />
-                            </div>
-
-                            <div className="min-h-dvh flex flex-col bg-page-secondary">
-                                <Timeline />
-                            </div>
-
-                            <div className="min-h-dvh flex flex-col bg-page-primary">
-                                <Projects />
-                            </div>
-
-                            <div className="min-h-dvh flex flex-col bg-page-secondary">
-                                <Skills />
-                            </div>
-
-                            <div className="min-h-dvh flex flex-col bg-page-secondary">
-                                <Contact />
-                            </div>
+                            <title>Thank you | Edan Read</title>
+                            <ThankYou />
                         </>
-                    }
-                />
-
-                <Route path="/experience/:id" element={
-                        <div className="min-h-dvh flex flex-col bg-page-secondary">
-                            <ExperienceDetails />
-                        </div>
-                    }
-                />
-                <Route
-                    path="/project/:id"
-                    element={<ProjectDetails />}
-                />
-                <Route path="/thank-you" element={<ThankYou />} />
-            </Routes>
-            <AccessibilityMenu />
-        </main>
+                    } />
+                </Routes>
+                <AccessibilityMenu />
+            </main>
     );
 }
