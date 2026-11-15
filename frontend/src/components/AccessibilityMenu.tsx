@@ -70,66 +70,6 @@ export default function AccessibilityMenu() {
 
     return (
         <>
-            {menu === "question" && (
-                <div
-                    className="
-                        accessibility-menu
-                        fixed bottom-0 z-50
-                        w-full min-h-16
-                        flex flex-col md:flex-row
-                        justify-between items-center
-                        gap-4 bg-surface p-4
-                        border-t border-border-subtle
-                    "
-                >
-                    <p className="text-primary">
-                        Would you like to see the accessibility options?
-                    </p>
-
-                    <div className="flex gap-4">
-                        <button
-                            type="button"
-                            className="
-                                bg-primary text-on-primary
-                                p-2 w-24 rounded-md
-                                hover:bg-accent hover:text-on-accent
-                                cursor-pointer
-                            "
-                            onClick={() => {
-                                localStorage.setItem(
-                                    "accessibility-decision",
-                                    "yes"
-                                );
-
-                                setMenu("choices");
-                            }}
-                        >
-                            Yes
-                        </button>
-
-                        <button
-                            type="button"
-                            className="
-                                bg-secondary text-on-secondary
-                                p-2 w-24 rounded-md
-                                hover:bg-accent hover:text-on-accent
-                                cursor-pointer
-                            "
-                            onClick={() => {
-                                localStorage.setItem(
-                                    "accessibility-decision",
-                                    "no"
-                                );
-
-                                setMenu("closed");
-                            }}
-                        >
-                            No
-                        </button>
-                    </div>
-                </div>
-            )}
-
             {menu === "choices" && (
                 <div
                     className="
@@ -195,7 +135,7 @@ export default function AccessibilityMenu() {
                         <button
                             type="button"
                             className="
-                                bg-primary text-on-primary
+                                bg-secondary text-on-secondary
                                 p-2 flex-1 lg:flex-none lg:w-24
                                 rounded-md
                                 hover:bg-accent hover:text-on-accent
@@ -204,20 +144,6 @@ export default function AccessibilityMenu() {
                             onClick={() => setMenu("closed")}
                         >
                             Done
-                        </button>
-
-                        <button
-                            type="button"
-                            className="
-                                bg-secondary text-on-secondary
-                                p-2 flex-1 lg:flex-none lg:w-24
-                                rounded-md
-                                hover:bg-accent hover:text-on-accent
-                                cursor-pointer
-                            "
-                            onClick={() => setMenu("question")}
-                        >
-                            Back
                         </button>
                     </div>
                 </div>
