@@ -16,7 +16,6 @@ export default function Navbar() {
         const section = document.getElementById(id);
 
         section?.scrollIntoView({
-            behavior: "smooth",
             block: "start",
         });
     }
