@@ -1,0 +1,11 @@
+# Edan Read - Portfolio
+
+> A personal portfolio showcasing frontend development,
+> professional experience and software projects.
+
+## Main Pages
+- [Homepage](https://portfolio-bxl.pages.dev/): Introduction and overview.
+- [Experience](https://portfolio-bxl.pages.dev/#experience): Professional experience from 2019 to current.
+- [Projects](https://portfolio-bxl.pages.dev/#projects): Software development and automation projects with the technologies used.
+- [Skills](https://portfolio-bxl.pages.dev/#skills): Skills displaying the tech stack and practices that Edan has experience with.
+- [Contact](https://portfolio-bxl.pages.dev/#contact): A contact form to get in touch with Edan.
