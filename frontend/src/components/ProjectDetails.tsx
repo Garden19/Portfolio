@@ -58,8 +58,9 @@ export default function ProjectDetails() {
 
     return (
         <>
-            <title>{`${selectedProject.name} | Edan Read`}</title>
-
+            <title>{`${selectedProject.metaTitle}`}</title>
+            <meta name="description" content={selectedProject.metaDescription} />
+            
             <main
                 className="
                     min-h-dvh w-full

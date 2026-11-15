@@ -9,6 +9,8 @@ export type Project = {
     resolution: string;
     challenges: string[];
     images: ProjectImage[];
+    metaTitle: string;
+    metaDescription: string;
 }
 
 export type ProjectImage = {

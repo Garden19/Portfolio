@@ -6,4 +6,6 @@ export type Experience = {
     description: string;
     responsibilities: string[];
     achievements?: string[];
+    metaTitle: string;
+    metaDescription: string;
 }

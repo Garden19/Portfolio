@@ -17,6 +17,8 @@ export const experiences: Experience[] = [
         achievements: [
             "I was selected by the Project Manager to create training and process documentation used to support colleague onboarding and improve consistency across the team."
         ],
+        metaTitle: "Global Web Forms Coordinator | Edan Read",
+        metaDescription: "Explore my Global Web Forms Coordinator experience."
     },
     {
         id: 2,
@@ -38,6 +40,8 @@ export const experiences: Experience[] = [
             "Developed a auditing tool that reduced the time required for a full file audit from approximately one working day to around three hours.",
             "Awarded employee of the month for the tools developed."
         ],
+        metaTitle: "Claims Coordinator | Edan Read",
+        metaDescription: "Explore my Claims Coordinator experience."
     },
     {
         id: 3,
@@ -54,6 +58,8 @@ export const experiences: Experience[] = [
             "Created a Python script that partially automated preparation of bordereaux information for finance.",
             "Supported internal training by creating instructional video content using Adobe Premiere Pro."
         ],
+        metaTitle: "Junior Business Data Analyst | Edan Read",
+        metaDescription: "Explore my Junior Business Data Analyst experience."
     },
     {
         id: 4,
@@ -72,6 +78,8 @@ export const experiences: Experience[] = [
             "Acknowledged by managers for creating an internal tool which provided new staff with frequently used information and shortcuts.",
             "I was promoted to Junior Business Data Analyst after being acknowledged for technical skills."
         ],
+        metaTitle: "Customer Service Advisor | Edan Read",
+        metaDescription: "Explore my Customer Service Advisor experience."
     },
     {
         id: 5,
@@ -89,5 +97,7 @@ export const experiences: Experience[] = [
         achievements: [
             "Was recognised by seniors and managers for my friendly approach, this lead to me being specifically requested for multiple events where there was high profile clients."
         ],
+        metaTitle: "Event staff | Edan Read",
+        metaDescription: "Explore my Event staff experience."
     }
 ];

@@ -34,9 +34,9 @@ export default function ExperienceDetails() {
 
     return (
         <>
-            <title>
-                {`${selectedExperience.title} | Edan Read`}
-            </title>
+            <title>{`${selectedExperience.metaTitle}`}</title>
+            <meta name="description" content={selectedExperience.metaDescription} />
+            
             <main className="
                 min-h-dvh w-full
                 bg-page-primary

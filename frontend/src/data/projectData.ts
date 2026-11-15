@@ -46,7 +46,9 @@ export const projects: Project[] = [
                 "path" : NorthernSpectreMobile,
                 "altInformation": "Mobile view of the Northern Spectre Airsoft homepage featuring stacked cards promoting family days out and birthday parties, with airsoft photography, navigation links and contact information."
             },
-        ]
+        ],
+        metaTitle: "Northern Spectre Airsoft | Edan Read",
+        metaDescription: "Explore my Northern Spectre Airsoft project."
     },
     {
         id: 2,
@@ -79,7 +81,9 @@ export const projects: Project[] = [
                 "path" : justbyouMobile,
                 "altInformation": "Mobile view of the Just B You By J homepage featuring a horizontally scrolling gallery of makeup services, with bridal makeup pricing and booking options, followed by a Meet the Team section."
             },
-        ]
+        ],
+        metaTitle: "Just B You By J | Edan Read",
+        metaDescription: "Explore my Just B You By J project."
     },
     {
         id : 3,
@@ -104,7 +108,9 @@ export const projects: Project[] = [
                 "path" : ohmsMobile,
                 "altInformation" : "Mobile view of the Ohm's Law Calculator displaying a vape device above a vertically arranged form for selecting a battery, entering voltage, amp rating and coil resistance, with a Calculate button below."
             },
-        ]
+        ],
+        metaTitle: "Ohms Law calculator | Edan Read",
+        metaDescription: "Explore my Ohms Law calculator project."
     },
     {
         id: 4,
@@ -136,7 +142,9 @@ export const projects: Project[] = [
                 altInformation:
                     "Mobile view of the Cruise Admin Dashboard enquiries page, displaying customer enquiry cards vertically with cruise images, customer details, destinations, budgets, travel dates and booking statuses beneath a collapsible navigation menu."
             }
-        ]
+        ],
+        metaTitle: "Cruise Admin Dashboard | Edan Read",
+        metaDescription: "Explore my Cruise Admin Dashboard project."
     },
     {
         id: 5,
@@ -173,6 +181,8 @@ export const projects: Project[] = [
                 path: weatherDisruptionBookingDetails,
                 altInformation : "Airtable booking details interface showing a high-risk flight connection, including the traveller's route, remaining connection time, current delay, risk reason and weather conditions at the airports."
             }
-        ]
+        ],
+        metaTitle: "Weather Disruption Monitor | Edan Read",
+        metaDescription: "Explore my Weather Disruption Monitor project."
     }
 ]
