@@ -4,14 +4,14 @@ import { motion, useScroll, useTransform } from "motion/react";
 
 import { projects } from "../../data/projectData";
 
-import countryDesktop from "../../assets/images/projects/country-explorer.png";
-import countryMobile from "../../assets/images/projects/country-explorer-mobile.png";
+import countryDesktop from "../../assets/images/projects/country-explorer.webp";
+import countryMobile from "../../assets/images/projects/country-explorer-mobile.webp";
 
-import ohmsDesktop from "../../assets/images/projects/ohms-law-calculator.png";
-import ohmsMobile from "../../assets/images/projects/ohms-law-calculator-mobile.png";
+import ohmsDesktop from "../../assets/images/projects/ohms-law-calculator.webp";
+import ohmsMobile from "../../assets/images/projects/ohms-law-calculator-mobile.webp";
 
-import cruiseDesktop from "../../assets/images/projects/cruise-admin-dashboard.png";
-import cruiseMobile from "../../assets/images/projects/cruise-admin-dashboard-mobile.png";
+import cruiseDesktop from "../../assets/images/projects/cruise-admin-dashboard.webp";
+import cruiseMobile from "../../assets/images/projects/cruise-admin-dashboard-mobile.webp";
 
 import ProjectItem from "../ProjectItem";
 

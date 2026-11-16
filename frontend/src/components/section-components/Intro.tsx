@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import mascotBody from "../../assets/images/mascotBody.png";
-import mascotEye from "../../assets/images/mascotEye.png";
+import mascotBody from "../../assets/images/mascotBody.webp";
+import mascotEye from "../../assets/images/mascotEye.webp";
 
 export default function Intro() {
     const [eyePosition, setEyePosition] = useState({
