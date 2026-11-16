@@ -1,16 +1,16 @@
 import type { Project } from "../types/Project";
 
-import ohmsDesktop from "../assets/images/projects/ohms-law-calculator.png"
-import ohmsMobile from "../assets/images/projects/ohms-law-calculator-mobile.png"
-import cruiseDesktop from "../assets/images/projects/cruise-admin-dashboard.png"
-import cruiseMobile from "../assets/images/projects/cruise-admin-dashboard-mobile.png"
-import NorthernSpectreDesktop from "../assets/images/projects/northern-spectre-airsoft.png"
-import NorthernSpectreMobile from "../assets/images/projects/northern-spectre-airsoft-mobile.png"
-import justbyouDesktop from "../assets/images/projects/justbyou.png"
-import justbyouMobile from "../assets/images/projects/justbyou-mobile.png"
-import weatherDisruptionBookingDetails from "../assets/images/projects/weather-disruption-airtable-booking_details.png"
-import weatherDisruptionAtRisk from "../assets/images/projects/weather-disruption-airtable.png"
-import weatherDisruptionMakeAutomation from "../assets/images/projects/weather-disruption-make.png"
+import ohmsDesktop from "../assets/images/projects/ohms-law-calculator.webp"
+import ohmsMobile from "../assets/images/projects/ohms-law-calculator-mobile.webp"
+import cruiseDesktop from "../assets/images/projects/cruise-admin-dashboard.webp"
+import cruiseMobile from "../assets/images/projects/cruise-admin-dashboard-mobile.webp"
+import NorthernSpectreDesktop from "../assets/images/projects/northern-spectre-airsoft.webp"
+import NorthernSpectreMobile from "../assets/images/projects/northern-spectre-airsoft-mobile.webp"
+import justbyouDesktop from "../assets/images/projects/justbyou.webp"
+import justbyouMobile from "../assets/images/projects/justbyou-mobile.webp"
+import weatherDisruptionBookingDetails from "../assets/images/projects/weather-disruption-airtable-booking_details.webp"
+import weatherDisruptionAtRisk from "../assets/images/projects/weather-disruption-airtable.webp"
+import weatherDisruptionMakeAutomation from "../assets/images/projects/weather-disruption-make.webp"
 
 
 export const projects: Project[] = [
